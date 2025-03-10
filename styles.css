@@ -51,6 +51,10 @@ body{
     transform: scale(1.05);
     background-color: #4338ca;
 }
+.banner{
+    background-image: url('/img/banner.png');
+    background-size: cover;
+}
 @media (max-width: 768px) {
     .container {
         max-width: 100%;
