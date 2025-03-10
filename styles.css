@@ -54,6 +54,8 @@ body{
 .banner{
     background-image: url('/img/banner.png');
     background-size: cover;
+    background-position: center;
+    min-height: 400px;
 }
 @media (max-width: 768px) {
     .container {
