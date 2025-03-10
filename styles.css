@@ -1,0 +1,111 @@
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.card-description {
+    color: #555;
+    font-size: 1rem;
+}
+.trainer-card {
+    text-align: center;
+}
+.trainer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+.trainer-card:hover .trainer-image {
+    transform: scale(1.1);
+}
+.menu-link {
+    transition: color 0.3s ease;
+}
+.menu-link:hover {
+    color: #60a5fa;
+}
+.join-button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.join-button:hover {
+    transform: scale(1.05);
+    background-color: #4338ca;
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .md\:grid-cols-2 {
+        grid-cols-1;
+    }
+    .lg\:grid-cols-3 {
+        grid-cols-1;
+    }
+    .md\:text-left {
+        text-align: center;
+    }
+    .md\:flex-row {
+        flex-direction: column;
+    }
+    .md\:space-x-4 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .md\:space-y-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .md\:justify-start {
+        justify-content: center;
+    }
+    .md\:items-center {
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .program-cards,
+    .trainer-cards,
+    .membership-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+}
